@@ -22,11 +22,59 @@ en:
     about:
       title: "About"
       content: "This is about page."
+
   layout_header:
     logo: "Library Manager"
     home: "Home"
+    signout: "Sign out"
   layout_footer:
     about: "About"
     contact: "Contact"
     library_manager: "Library Manager"
     privacy_note: "Privacy Note"
+
+  views:
+    users:
+      index:
+        detail_user: "Detail User"
+      edit:
+        title: "Edit user"
+        bt_title_edit: "Save changes"
+        update_title: "Update your profile"
+      new:
+        title: "Sign up"
+        bt_title_signup: "Sign Up"
+      show:
+        list_reviews: "List Reviews"
+        list_favorite: "List Favorite Books"
+        list_read: "List Read Books"
+        list_request: "History Request"
+        title: "Title: "
+        content: "Content: "
+        update_image_bt: "Upload"
+        bt_send_rq: "Send Request"
+    session:
+      new:
+        title_login: "Log in"
+        placeholder_email: "Email"
+        placeholder_pass: "Password"
+        remember: "Remember me"
+        bt_signup_now: "Sign up now!"
+    password:
+      new:
+        forgot: "Forgot your password?"
+        sent_email: "Send me reset password instructions"
+      edit:
+        title: "Edit Password"
+        change_password: "Change your password"
+        change_my_password: "Change my password"
+        new_password: "New Password"
+        charact_min: "characters minimum"
+        confirm_password: "Confirm new password"
+    shared:
+      login: "Log in"
+      signup: "Sign up"
+      forgot_password: "Forgot your password?"
+    email:
+      confirm_account: "Confirm my account"
+      change_password: "Change my password"
