@@ -32,23 +32,37 @@ footer ul li {
   margin-left: 15px;
 }
 
+/* form login*/
+
+.form-login {
+  background-color: #EDBD6A;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  border-color: #d2d2d2;
+  border-width: 5px;
+  box-shadow: 0 1px 0 #cfcfcf;
+}
+
 /*layout application*/
 
 .margin_top {
-   margin-top: 50px;
+  margin-top: 50px;
  }
 
 /* form sign up*/
 
 .form-login {
-    background-color: #f0a800;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-color: #d2d2d2;
-    border-width: 5px;
-    box-shadow: 0 1px 0 #cfcfcf;
+  background-color: #f0a800;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #d2d2d2;
+  border-width: 5px;
+  box-shadow: 0 1px 0 #cfcfcf;
 }
 
 .margin_left {
@@ -58,3 +72,4 @@ footer ul li {
 .margin_top {
   margin-top: 40px;
 }
+

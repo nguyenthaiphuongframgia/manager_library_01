@@ -10,6 +10,8 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_relationships, source: :follower
   has_many :comments
 
+  mount_uploader :avatar, PictureUploader
+
   validates :name, presence: true, length: {maximum: Settings.maximum.name}
   validates :phone, presence: true, length: {maximum: Settings.maximum.phone}
 

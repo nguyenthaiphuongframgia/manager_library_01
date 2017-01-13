@@ -1,0 +1,14 @@
+<% provide :title, @user.name %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <div><%= image_tag @user.avatar_url, class: "class_image",
+          size: Settings.size_image_avater  %></div>
+        <div><%= @user.name %></div>
+      </h1>
+    </section>
+  </aside>
+</div>
+<%= link_to t("users.edit"), edit_user_path(current_user),
+  class: "btn glyphicon glyphicon-pencil btn-info" %>

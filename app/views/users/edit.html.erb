@@ -1,0 +1,27 @@
+<% provide :title, t("update_user") %>
+<h1 class="col-sm-8 col-sm-offset-4"><%= t("user.update_user") %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 form-login">
+    <%= form_for @user do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :phone %>
+      <%= f.number_field :phone, class: "form-control" %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control", autocomplete: "false" %>
+
+      <%= f.label :password_confirmation, t("user.confirmation") %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
+
+      <%= f.label :avatar %>
+      <%= f.file_field :picture, class: "form-control" %>
+
+      <%= f.submit t("users.save_change"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
