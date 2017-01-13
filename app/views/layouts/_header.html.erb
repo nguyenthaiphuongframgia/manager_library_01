@@ -4,6 +4,12 @@
       <ul class="nav navbar-nav navbar-left">
         <%= link_to t("layout_header.logo"), root_path, id: "logo",
           class: "navbar-brand" %>
+        <% if !user_signed_in? %>
+          <li><%= link_to t("layout_header.log_in"), new_user_session_path %></li>
+          <li><%= link_to t("layout_header.sign_up"), new_user_registration_path %></li>
+        <% else %>
+          <li><%= link_to t("layout_header.signout"), destroy_user_session_path, method: :delete %></li>
+        <% end %>
         <li class="dropdown">
           <%= link_to "", class: "dropdown-toggle",
             data: {toggle: "dropdown"}, role: "button" do %>
