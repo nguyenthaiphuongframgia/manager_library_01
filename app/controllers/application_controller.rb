@@ -5,5 +5,19 @@ class ApplicationController < ActionController::Base
   protected
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit :sign_up, keys: [:name, :phone]
+    devise_parameter_sanitizer.permit :edit, keys: [:name, :phone]
+  end
+
+  def correct_user
+    @user = User.find_by id: params[:id]
+    if @user.nil?
+      flash[:danger] = t "users.user_not_found"
+      redirect_to root_url
+    else
+      unless @user == current_user
+        flash[:danger] = t "users.user_not_found"
+        redirect_to root_url
+      end
+    end
   end
 end

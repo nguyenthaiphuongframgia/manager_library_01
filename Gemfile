@@ -33,6 +33,7 @@ gem "omniauth-twitter"
 gem "omniauth-facebook"
 gem "omniauth-instagram"
 gem "bootstrap-sass", "3.3.6"
+gem "rails_12factor"
 
 group :development, :test do
   gem "byebug", platform: :mri
