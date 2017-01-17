@@ -1,0 +1,14 @@
+<div class="well">
+  <div class="media">
+    <%= link_to  @user.avatar.url, [:admin, @user], class: "pull-left" %>
+    <div class="media-body">
+      <p><%= t "admin.name_user" %><%= @user.name %></p>
+      <p><%= t "admin.email_user" %><%= @user.email %></p>
+      <p><%= t "admin.admin_user" %><%= @user.is_admin %></p>
+      <p><%= t "admin.created_time_user" %><%= @user.created_at %></p>
+      <p><%= t "admin.updated_time_user" %><%= @user.updated_at %></p>
+    </div>
+    <%= link_to t("layout_header.edit"), edit_admin_user_path,
+      class: "btn glyphicon glyphicon-pencil btn-info" %>
+  </div>
+</div>

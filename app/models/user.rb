@@ -15,6 +15,10 @@ class User < ApplicationRecord
   validates :name, presence: true, length: {maximum: Settings.maximum.name}
   validates :phone, presence: true, length: {maximum: Settings.maximum.phone}
 
+  enum role: [:user, :manager, :admin]
+
   devise :database_authenticatable, :registerable, :recoverable, :rememberable,
     :trackable, :validatable
+
+  scope :all_except, -> user {where.not id: user}
 end

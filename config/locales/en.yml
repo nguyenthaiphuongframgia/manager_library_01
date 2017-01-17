@@ -1,4 +1,3 @@
-
 en:
   hello: "Hello world"
   library_manager: "Library Manager"
@@ -6,7 +5,6 @@ en:
     helpers:
       application:
         base_title: "Library Manager"
-
   static_pages:
     home:
       title_welcome: "Welcome to Library Manager"
@@ -88,3 +86,20 @@ en:
     user_not_found: "User not found"
     profile_success: "Update profile success"
     profile_fails: "Update profile fails"
+   admin:
+    users:
+      delete: "Delete"
+      create_success: "Create user success"
+      create_fails: "Create user fails"
+      success_destroyed_user: "Success destroyed user"
+      unsuccess_destroyed_user: "Unsuccess destroyed user"
+      are_you_sure: "Are you sure ?"
+      profile_success: "Update profile success"
+      profile_fails: "Update profile fails"
+      edit: "Edit user"
+      update: "Update Profile"
+      search_user: "Search users"
+      you_allow: "You not allow conntected"
+      manager: "Manager"
+      you_save: "You had choose success"
+      you_fails: "You had choose fails"

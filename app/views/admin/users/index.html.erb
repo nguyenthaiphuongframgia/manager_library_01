@@ -1,0 +1,27 @@
+<div class="container margin_top">
+  <div class="row">
+    <%= search_form_for [:admin, @q] do |f| %>
+      <div class="col-xs-6 col-xs-offset-2">
+        <div class="input-group">
+          <input type="hidden" name="search_param" value="all" id="search_param">
+          <%= f.text_field :name_or_email_cont,
+            placeholder: t("admin.users.search_user"), class: "form-control" %>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<% if @users.empty? %>
+  <%= t("admin.users.not_found") %>
+<% else  %>
+  <%= will_paginate @users %>
+  <div class="row">
+    <%= render @users %>
+  </div>
+  <%= will_paginate @users %>
+<% end %>
