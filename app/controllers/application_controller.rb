@@ -20,4 +20,11 @@ class ApplicationController < ActionController::Base
       end
     end
   end
+
+  def verify_admin
+    unless current_user.admin? || current_user.manager?
+      flash[:danger] = t "admin.users.you_allow"
+      redirect_to request.referer
+    end
+  end
 end
