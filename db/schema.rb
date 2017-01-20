@@ -134,6 +134,7 @@ ActiveRecord::Schema.define(version: 20170111042533) do
     t.string   "phone"
     t.boolean  "is_admin"
     t.string   "avatar"
+    t.integer  "role"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree

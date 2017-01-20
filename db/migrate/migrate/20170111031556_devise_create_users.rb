@@ -24,7 +24,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string    :phone
       t.boolean  :is_admin
       t.string   :avatar
-
+      t.integer  :role
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at

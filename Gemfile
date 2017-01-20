@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "faker", "~> 1.6", ">= 1.6.6"
 gem "rails", "~> 5.0.1"
 gem "mysql2", ">= 0.3.18", "< 0.5"
 gem "puma", "~> 3.0"
@@ -16,8 +17,6 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "carrierwave"
 gem "mini_magick"
-gem "will_paginate"
-gem "bootstrap-will_paginate"
 gem "config"
 gem "roo"
 gem "to_xls-rails"
@@ -35,7 +34,10 @@ gem "omniauth-instagram"
 gem "bootstrap-sass", "3.3.6"
 gem "rails_12factor"
 gem "ransack"
+gem "axlsx", "2.1.0.pre"
+gem "axlsx_rails"
 gem "kaminari"
+gem "bootstrap-kaminari-views"
 
 group :development, :test do
   gem "byebug", platform: :mri

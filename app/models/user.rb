@@ -12,6 +12,8 @@ class User < ApplicationRecord
 
   mount_uploader :avatar, PictureUploader
 
+  enum role: [:user, :manager, :admin]
+
   validates :name, presence: true, length: {maximum: Settings.maximum.name}
   validates :phone, presence: true, length: {maximum: Settings.maximum.phone}
 
